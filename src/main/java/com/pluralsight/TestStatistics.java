@@ -8,16 +8,18 @@ public class TestStatistics {
         int[] testScores = {54,67,99,32,78,23,88,97,50,79};
         Arrays.sort(testScores);
 
-        double sum = 0;
+        int sum = 0;
 
-        double highScore = testScores[testScores.length -1];
-        double lowScore = testScores[0];
+        int highScore = testScores[testScores.length -1];
+        int lowScore = testScores[0];
 
         for (int testScore : testScores) {
             sum += testScore;
         }
 
         double average = sum / testScores.length;
+
+
         double median = (testScores[testScores.length / 2 - 1]
                 + testScores[testScores.length / 2]) / 2.0;
 
@@ -28,9 +30,9 @@ public class TestStatistics {
         System.out.println("The median = " + median);
 
     }
-    /*public static void calculateMedian(Array test, int length){
+    /*public static void calculateMedian(Array testScore, int length){
         if (length % 2 == 0){
-            median = Arrays.this.length() /2*/
-
+            median = Arrays.this.length()
+*/
 
 }
